@@ -1,0 +1,67 @@
+@mixin resetHoverLink {
+  &:hover {
+    text-decoration: none;
+    color: inherent !important;
+  }
+}
+
+@mixin trac200 {
+  letter-spacing: 4px;
+}
+@mixin trac50 {
+  letter-spacing: 1px;
+}
+
+@mixin lineFloatLeft {
+  position: relative;
+  &::before {
+    content: '';
+    width: 0.1rem;
+    height: 0;
+    left: -25px;
+    background-color: $orangeB;
+    position: absolute;
+    transition: height $timer linear;
+  }
+  &:hover:before {
+    height: 100%;
+  }
+}
+@mixin lineFloatLeftNoHover {
+  position: relative;
+  &::before {
+    content: '';
+    width: 0.1rem;
+    height: 100%;
+    left: -25px;
+    background-color: $orangeB;
+    position: absolute;
+    transition: height $timer linear;
+  }
+}
+
+@mixin resetLink {
+  &:hover {
+    text-decoration: none;
+    color: $blueB;
+  }
+}
+
+@mixin baseText {
+  color: $blueB;
+  font-family: 'century-gothic';
+  font-weight: bold;
+}
+
+@mixin menuPosition {
+  background-color: $blueB;
+  position: absolute;
+  width: 101vw;
+  height: 100vh;
+  left: -33%;
+  top: -15%;
+  z-index: 5;
+  @include lg{
+    width: 100vw;
+  }
+}

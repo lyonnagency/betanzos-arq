@@ -1,0 +1,75 @@
+// responsive web rules
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+
+$browser-context: 16;
+
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+$blueB: #001d7e;
+$orangeB: #d58400;
+$blueSky: #4c86c5;
+$greenwats: #25d366;
+
+// $s12: 0.7rem;
+$s12: em(12);
+$s13: em(13);
+$s14: em(14);
+$s15: em(15);
+$s16: em(16);
+$s20: em(20);
+$s24: em(24);
+$s25: 1.5rem;
+$s26: em(26);
+$s28: em(28);
+$s30: em(30);
+$s32: em(32);
+$s34: em(34);
+$s40: em(40);
+$s42: em(42);
+$s45: em(45);
+$s48: 2.6rem;
+$s55: em(55);
+$s64: 3rem;
+$timer: 0.3s;

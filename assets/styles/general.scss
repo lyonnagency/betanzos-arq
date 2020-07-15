@@ -1,0 +1,682 @@
+@import 'variables.scss';
+html {
+  scroll-behavior: smooth;
+}
+.bg-blue {
+  background-color: $blueB;
+}
+.bg-orange {
+  background-color: $orangeB;
+}
+img {
+  z-index: -1;
+}
+
+.container-1 {
+  max-width: 88%;
+  margin: auto;
+}
+.container-2 {
+  max-width: 88%;
+  margin: auto;
+}
+
+.container-3 {
+  // max-width: 85%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  @include sm {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include md {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: 4%;
+  }
+  @include lg {
+    max-width: 73%;
+    margin-left: auto;
+    margin-right: 7%;
+  }
+}
+.container-4 {
+  // max-width: 93%;
+  max-width: 100%;
+  margin-left: 0;
+  // margin-right: 7%;
+  margin-right: 0;
+  position: relative;
+  @include md {
+    max-width: 96%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include lg {
+    max-width: 93%;
+    margin-left: 0;
+    margin-right: 7%;
+  }
+}
+
+.container-5 {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  @include sm {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  @include md {
+    max-width: 90%;
+  }
+
+  @include xl {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.container-gallery {
+  @include md {
+    // max-width: 100% !important;
+  }
+  @include xl {
+    max-width: 80% !important;
+  }
+}
+
+.container-5.container-gallery {
+  .titile-line-vertical {
+    @include sm {
+      background-color: transparent;
+      position: relative;
+      top: 0;
+      // margin-left: 40px;
+      // margin-bottom: 40px;
+      height: 80px;
+      padding: 0;
+      z-index: 1;
+    }
+    @include md {
+      margin: 10px 35px;
+    }
+    @include lg {
+      margin: 10px 35px;
+    }
+
+    background-color: white;
+    position: absolute;
+    width: 92%;
+
+    top: 87%;
+    margin: 10px 20px;
+    padding: 15px 60px;
+    z-index: 9;
+  }
+  .titile-line-vertical.title-gllery {
+    padding: 15px 0;
+    top: 0;
+    position: relative;
+  }
+  max-width: 100%;
+  @include md {
+    max-width: 90%;
+  }
+  @include xl {
+    max-width: 80%;
+  }
+
+  .r1 {
+    &::before {
+      left: -40px;
+      top: 50%;
+      @include sm {
+        left: 0;
+        top: -50%;
+      }
+      @include md {
+        left: -30px;
+        top: 50%;
+      }
+      @include lg {
+        left: -30px;
+      }
+    }
+  }
+}
+
+// Used firts at the services page
+// text at left and images at right
+.container-6 {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  // @include md {
+  //   max-width: 87%;
+  //   margin-left: auto;
+  //   margin-right: 0;
+  //   position: relative;
+  // }
+  @include lg {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+  }
+  @include xl {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+  }
+}
+
+.text-blue {
+  color: $blueB !important;
+}
+.text-orange {
+  color: $orangeB !important;
+}
+.full-h {
+  height: 100%;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+.ff-century-g {
+  font-family: 'century-gothic';
+}
+.ff-ginora {
+  font-family: 'ginora-sans';
+}
+.ff-philomena-script {
+  font-family: 'philomena-script';
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+.fw-light {
+  font-weight: 200;
+}
+
+.text-vertical {
+  transform: rotate(0);
+  left: 0;
+  position: relative;
+  @include sm {
+    transform: rotate(-90deg);
+  }
+}
+
+.text-vertical-xs{
+  transform: rotate(-90deg);
+}
+
+
+
+.break-word {
+  overflow-wrap: break-word;
+}
+.btn-on-orange {
+  border: 1px solid white !important;
+  color: white !important;
+  text-transform: none !important;
+  letter-spacing: 1px !important;
+  padding: 25px 40px !important;
+
+  &:hover {
+    border: 1px solid $blueB !important;
+    color: $blueB !important;
+  }
+}
+.btn-base {
+  background-color: transparent;
+  border: 1px solid $blueB;
+  font-family: 'century-gothic';
+  font-size: $s13;
+  color: $blueB;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  transition: all 0.3s linear;
+  @include trac200;
+
+  &:hover {
+    border: 1px solid $orangeB;
+    color: $orangeB;
+    text-decoration: none ;
+  }
+
+
+}
+
+.traking-200 {
+  @include trac200;
+}
+.traking-400 {
+  letter-spacing: 12px;
+}
+
+.line-float-left {
+  @include lineFloatLeft;
+}
+
+.fs-13 {
+  font-size: $s13;
+}
+.fs-14 {
+  font-size: $s16;
+}
+.fs-15 {
+  font-size: $s15;
+}
+.fs-16 {
+  font-size: $s16;
+}
+
+.fs-20 {
+  font-size: $s20;
+}
+.fs-24 {
+  font-size: $s24;
+}
+.fs-25 {
+  font-size: $s25;
+}
+.fs-26 {
+  font-size: $s26;
+}
+.fs-28 {
+  font-size: $s28;
+}
+.fs-30 {
+  font-size: $s30;
+}
+.fs-32 {
+  font-size: $s32;
+}
+.fs-34 {
+  font-size: $s34;
+}
+.fs-40 {
+  font-size: $s40;
+}
+.fs-42 {
+  font-size: $s42;
+}
+.fs-45 {
+  font-size: $s45;
+}
+.fs-48 {
+  font-size: $s48;
+}
+.fs-55 {
+  font-size: $s55;
+}
+.fs-64 {
+  font-size: $s64;
+}
+.navbar-dark .navbar-toggler {
+  border-color: transparent;
+}
+
+.space-section-top {
+  margin-top: 45px;
+  @include sm {
+    margin-top: 60px;
+  }
+  @include md {
+    margin-top: 100px;
+  }
+  @include lg {
+    margin-top: 170px;
+  }
+}
+.space-section-bottom {
+  margin-bottom: 45px;
+  @include sm {
+    margin-bottom: 60px;
+  }
+  @include md {
+    margin-bottom: 100px;
+  }
+  @include lg {
+    margin-bottom: 170px;
+  }
+}
+
+.card-text-line-left {
+  position: relative;
+  &::before {
+    content: '';
+    width: 40px;
+    height: 1px;
+    position: absolute;
+    background-color: $orangeB;
+    top: -20%;
+    left: -25%;
+    transform: rotate(90deg);
+    // transform-origin: center;
+    @include sm {
+      top: 0;
+      left: -10%;
+      width: 20px;
+    }
+    @include md {
+      top: -20%;
+      left: -25%;
+      width: 40px;
+    }
+  }
+}
+.model-footer {
+  color: white;
+  &::before {
+    width: 22px;
+    top: 11px;
+    left: -15%;
+  }
+}
+
+.card-with-titled {
+  &::before {
+    top: 0;
+    // transform-origin: center;
+  }
+}
+
+.img-card-left {
+  position: relative;
+  z-index: 0;
+  left: -15px;
+  @include sm{
+    left: 0;
+  }
+  // height: 100%;
+  // display: flex;
+  // align-items: center;
+  // overflow: hidden;
+  img {
+    height: 45vh;
+    @include sm {
+      height: 250px;
+    }
+
+    @include md {
+      height: auto;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+    background-color: $orangeB;
+    top: -15px;
+    right: -15px;
+    z-index: -1;
+  }
+}
+
+.img-card-right {
+  position: relative;
+  // height: 100%;
+  // display: flex;
+  // align-items: center;
+  img {
+    height: 45vh;
+    @include sm {
+      height: 250px;
+    }
+    @include md {
+      height: auto;
+    }
+    @include lg {
+      height: auto;
+    }
+  }
+  z-index: 0;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+    background-color: $blueB;
+    top: -15px;
+    left: -15px;
+    z-index: -1;
+  }
+}
+
+.btn-transparent {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+.btn-wats {
+  border: none;
+  color: white;
+  background-color: $greenwats;
+  .cls-1 {
+    transition: fill $timer linear;
+  }
+  &:hover {
+    color: $blueB;
+    border-color: $blueB;
+    .cls-1 {
+      fill: $blueB;
+    }
+  }
+}
+.btn-footer {
+  .cls-1 {
+    transition: stroke $timer linear;
+  }
+  &:hover {
+    color: $orangeB;
+    border-color: $orangeB;
+    .cls-1 {
+      stroke: $orangeB;
+    }
+  }
+}
+
+.btn-default-size {
+  width: 100%;
+  height: 80px;
+  padding-left: 0;
+  padding-right: 0;
+  letter-spacing: 1px;
+  font-size: $s13;
+  @include sm {
+    width: 220px;
+    height: 60px;
+  }
+  @include lg {
+    width: 220px;
+    height: 80px;
+  }
+}
+
+.height-img {
+  img {
+    height: 100% !important;
+    width: auto !important;
+    @include lg {
+      // width: 100% !important;
+    }
+  }
+}
+.fix-img {
+  height: calc(70vh);
+  // margin-left: 15px;
+  @include sm {
+    height: 300px;
+  }
+  @include lg {
+    height: calc(75vh);
+  }
+  @include xl {
+    height: calc(95vh);
+  }
+
+  .img-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    img {
+      position: absolute;
+      bottom: 0;
+      // top: -15%;
+      // right: 0;
+      width: auto;
+      height: 100%;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      @include sm {
+        width: 100%;
+        height: auto;
+        // top: -25%;
+        // bottom: 0;
+      }
+      @include lg {
+        bottom: 0;
+        // right: ;
+        top: auto;
+        height: 100%;
+        width: auto;
+      }
+      @include xl {
+        // bottom: 0;
+        // right: ;
+        width: auto;
+        top: auto;
+        height: 100%;
+      }
+    }
+  }
+}
+.comun-text {
+  font-size: $s16;
+  font-family: 'ginora-sans';
+  font-weight: 200;
+  color: black;
+  text-align: justify;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.border-img-left {
+  position: relative;
+  &:before {
+    content: '';
+    width: 85%;
+    height: 85%;
+    background-color: $blueB;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    z-index: -1;
+    @include lg {
+      width: 60px;
+      height: 85%;
+      left: -40px;
+      top: 5%;
+    }
+  }
+  // z-index: -1;
+}
+.full-border-top {
+  &::before {
+    width: 100%;
+  }
+}
+.no-border {
+  &::before {
+    content: none;
+  }
+}
+
+.bg-blue-b {
+  &::before {
+    background-color: $blueB;
+  }
+}
+.bg-orange-b {
+  &::before {
+    background-color: $orangeB;
+  }
+}
+
+.input-betanzos {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  font-family: 'century-gothic';
+  font-weight: bold;
+  font-size: $s13;
+  color: #f9c67d;
+  padding: 15px 30px;
+  &::placeholder {
+    font-family: 'century-gothic';
+    font-weight: bold;
+    font-size: $s13;
+    color: #f9c67d;
+  }
+  &:focus {
+    outline-color: transparent;
+  }
+}
+
+.ico-input {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.line-over-left {
+  position: relative;
+  &::before {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background-color: $orangeB;
+    position: absolute;
+    top: -10%;
+    left: 0;
+  }
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.opacity-0{
+  opacity: 0;
+}
+
+.opacity-1{
+  opacity: 1;
+}
+
+
+
