@@ -72,25 +72,12 @@
             <h4 class="position">Director General</h4>
           </div>
           <div
-            class="col-lg-4 col-12 col-sm-6 col-md-4 team-item blue-item t2 mt-md-0 "
-          >
-            <div class="wrapper-img-team">
-              <!-- <img src="~/assets/img/faceTeam-1.jpg" alt="Team-1" /> -->
-            </div>
-            <a href="https://www.linkedin.com/in/mavis-esquivel-9a0a2918a/"
-               target="_blank"
-               title="Linkedin M.A.N. Mavis Esquivel Torres">
-              <h3 class="name">M.A.N. Mavis Esquivel Torres</h3>
-            </a>
-            <h4 class="position">Operaciones</h4>
-          </div>
-          <div
             class="col-lg-4 col-12 col-sm-6 col-md-4 team-item blue-item t3 mt-sm-4 mt-md-0"
           >
             <div class="wrapper-img-team">
               <!-- <img src="~/assets/img/faceTeam-1.jpg" alt="Team-1" /> -->
             </div>
-            <h3 class="name">Marcos Cruz López</h3>
+            <h3 class="name">Marcos Cruz Delgado</h3>
             <h4 class="position">Equipo de construcción</h4>
           </div>
         </div>
