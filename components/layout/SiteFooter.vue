@@ -88,7 +88,7 @@
           class=" d-flex justify-content-between align-items-center text-white opacity-08 col-12 flex-wrap"
         >
           <span class="col-sm-auto col-12 text-center">
-            Betanzos Arquitectura Integral © 2020.
+            Betanzos Arquitectura Integral © 2026.
             <nuxt-link class="ml-sm-3 ml-1" to="/aviso-privacidad">Aviso de privacidad</nuxt-link>
           </span>
           <a href="https://lyonn.co" target="_blank"

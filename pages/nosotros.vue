@@ -38,13 +38,16 @@
             servicio de proyectos arquitectónicos. Cada uno de nuestros proyectos son
             desarrollados con altos estándares de calidad en cada parte del proceso y de manera personalizada.
           </p>
+          <!-- 
           <h3 class="text-blue ff-philomena-script fs-48 mb-5">
             Ismael Vázquez Betanzos
           </h3>
+          -->
         </div>
       </div>
     </section>
     <Counter class="space-section-top space-section-bottom"></Counter>
+    <!--
     <section class="d-flex justify-content-center">
       <div
         class="col-12 col-sm-11 col-md-12 col-lg-9 d-flex justify-content-center flex-wrap"
@@ -59,10 +62,10 @@
           </div>
         </h2>
         <div class="d-flex justify-content-lg-center flex-wrap col-12">
+          
           <div
             class="col-lg-4 col-12 col-sm-6 col-md-4 team-item mt-md-0 reset-hover-link">
             <div class="wrapper-img-team">
-              <!-- <img src="~/assets/img/faceTeam-1.jpg" alt="Team-1" /> -->
             </div>
             <a href="https://www.linkedin.com/in/ismael-v%C3%A1zquez-betanzos-a966a5146/"
                target="_blank"
@@ -71,11 +74,11 @@
             </a>
             <h4 class="position">Director General</h4>
           </div>
+          
           <div
             class="col-lg-4 col-12 col-sm-6 col-md-4 team-item blue-item t3 mt-sm-4 mt-md-0"
           >
             <div class="wrapper-img-team">
-              <!-- <img src="~/assets/img/faceTeam-1.jpg" alt="Team-1" /> -->
             </div>
             <h3 class="name">Marcos Cruz Delgado</h3>
             <h4 class="position">Equipo de construcción</h4>
@@ -83,6 +86,7 @@
         </div>
       </div>
     </section>
+     -->
     <section class="container-6 pt-5 space-section-top">
       <div class="d-flex flex-wrap align-items-center">
         <div

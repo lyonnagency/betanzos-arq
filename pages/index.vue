@@ -190,7 +190,7 @@
       <div class="container-3 d-flex align-items-center flex-wrap mt-5 mt-sm-0">
         <div class="col-sm-5 col-lg-4 col-12 ">
           <h2
-            class="ff-century-g text-blue traking-200 break-wor fs-42 text-vertical text-vertical-xs"
+            class="ff-century-g text-blue traking-200 break-wor fs-42 text-vertica text-vertica-xs"
           >
             METODOLOGÍA ESTRUCTURADA Y FLEXIBLE
           </h2>
